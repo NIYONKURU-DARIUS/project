@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+<body>
+    <div class="header">
+        <p>Register in RESTA</p>
+    </div>
+    <div class="f">
+    <div class="form">
+    <form action="work1.php" target="_self" method="post"   autocomplete="on">
+        <p class="r">Register </p>
+        <label for="first">First name:</label>
+        <input type="text" id="first" name="username" autocomplete="username" required placeholder="name" minlength="1" maxlength="21"  autofocus><br>
+        <label for="last">Last name:</label>
+        <input type="text" id="last" name="lastname" autocomplete="lastname" required placeholder="name" ><br>
+        <label for="dob">D. of birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="pas">Password</label>
+        <input type="password" id="pas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="your password should contain atleast a number upper and lower case and even atleast 8 characters" ><br>
+        <label for="">
+           gender: <input type="radio" name="radio" value="male">male
+        </label> 
+        <label for="">
+            <input type="radio" name="radio" value="female">female
+        </label><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" autocomplete="email" required><br>
+        <label for="phone">Tel:</label>
+        <input type="number" id="phone"  name="tel" maxlength="10"><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br>
+        <label for="hi">uploads:</label>
+        <input type="file" name="hi" class="we" name="up"><br>
+        type of sports you do:
+        <label for="level3">football</label>
+        <input type="checkbox" id="level3" name="level1"><br>
+        <div class="kd">
+        <label for="level4">karate</label>
+        <input type="checkbox" id="level4" name="level2"><br>
+        <label for="level5">others </label>
+        <input type="checkbox" id="level5" name="level3"><br>
+        <label for="table" class="er">sport part of the day:</label>
+        <input type="range" min="1" max="19" name="p" class="p"><br>
+        </div>
+        <label for="your">Character:</label>
+        <select name="character" id="your" >
+            <option value="patient">patient</option>
+            <option value="kind">kind</option>
+            <option value="talkative">talkative</option>
+            <option value="courageous">courageous</option>
+            <option value="arrogance">allogance</option>
+            <option value="friendly">friendly</option>
+        </select><br>
+        <button type="submit" class="fd" >Register</button>
+        
+    </form>
+    </div>
+    </div>
+</body>
+</html>
