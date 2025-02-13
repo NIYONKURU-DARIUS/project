@@ -3,63 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Document</title>
-    <link rel="stylesheet" href="work.css">
+    
+    <style>
+       ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:white;
+        
+
+       }
+       li{
+        float: left;
+        background-color: black;
+       }
+       li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 40px;
+        text-decoration: none;
+       }
+       li a:hover:not(.active){
+        background-color: grey;
+       }
+        
+       .active{
+        background-color: green;
+       }
+       .dropbtn{
+         font-size: 16px;
+         border: none;
+         background-color:inherit;
+         outline: none;
+         font: inherit;
+         margin: 0;
+         padding: inherit;
+         
+
+       }
+       .dropbtn a{
+        text-decoration: none;
+        color: white;
+       }
+       .dpdwn a{
+        display: none;
+        background-color:rgb(77, 77, 88);
+        min-width: 100px;
+        padding: 16px 0px 16px 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        text-decoration: none;
+
+        
+       }
+       .dropbtn:hover{
+        background-color: grey;
+    
+       }
+      
+       .dropdown:hover .dpdwn a{
+        display: block;
+       }
+       .column{
+        text-decoration: none;
+        color: azure;
+
+       }
+      
+       
+    </style>
 </head>
 <body>
-    <div class="header">
-        <p>Register in RESTA</p>
-    </div>
-    <div class="f">
-    <div class="form">
-    <form action="work1.php" target="_self" method="post"   autocomplete="on">
-        <p class="r">Register </p>
-        <label for="first">First name:</label>
-        <input type="text" id="first" name="username" autocomplete="username" required placeholder="name" minlength="1" maxlength="21"  autofocus><br>
-        <label for="last">Last name:</label>
-        <input type="text" id="last" name="lastname" autocomplete="lastname" required placeholder="name" ><br>
-        <label for="dob">D. of birth:</label>
-        <input type="date" id="dob" name="dob"><br>
-        <label for="pas">Password</label>
-        <input type="password" id="pas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="your password should contain atleast a number upper and lower case and even atleast 8 characters" ><br>
-        <label for="">
-           gender: <input type="radio" name="radio" value="male">male
-        </label> 
-        <label for="">
-            <input type="radio" name="radio" value="female">female
-        </label><br>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" autocomplete="email" required><br>
-        <label for="phone">Tel:</label>
-        <input type="number" id="phone"  name="tel" maxlength="10"><br>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age"><br>
-        <label for="hi">uploads:</label>
-        <input type="file" name="hi" class="we" name="up"><br>
-        type of sports you do:
-        <label for="level3">football</label>
-        <input type="checkbox" id="level3" name="level1"><br>
-        <div class="kd">
-        <label for="level4">karate</label>
-        <input type="checkbox" id="level4" name="level2"><br>
-        <label for="level5">others </label>
-        <input type="checkbox" id="level5" name="level3"><br>
-        <label for="table" class="er">sport part of the day:</label>
-        <input type="range" min="1" max="19" name="p" class="p"><br>
-        </div>
-        <label for="your">Character:</label>
-        <select name="character" id="your" >
-            <option value="patient">patient</option>
-            <option value="kind">kind</option>
-            <option value="talkative">talkative</option>
-            <option value="courageous">courageous</option>
-            <option value="arrogance">allogance</option>
-            <option value="friendly">friendly</option>
-        </select><br>
-        <button type="submit" class="fd" >Register</button>
+    <ul>
+        <li><a  class ="active" href="">HOME</a></li>
         
-    </form>
-    </div>
-    </div>
+        <li><a href="">CONTACTS</a></li>
+        <li><a href="">ABOUT</a></li>
+    
+        <li class="dropdown">
+           <button class="dropbtn"><a href="">NEWS</a>
+            <i class="fa-thin fa-caret-down" ></i>
+        </button>
+            <div class="dpdwn">
+                <a class = "column" href="#">World</a>
+                <a class = "column" href="#">Sports</a>
+                <a class = "column" href="#">Business</a>
+                <a class = "column" href="#">Science/Tech</a>
+            </div>
+            </div>
+    </ul>
+    
 </body>
 </html>
