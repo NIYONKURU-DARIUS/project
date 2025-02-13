@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+    
+    <style>
+       ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:white;
+        
+
+       }
+       li{
+        float: left;
+        background-color: black;
+       }
+       li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 40px;
+        text-decoration: none;
+       }
+       li a:hover:not(.active){
+        background-color: grey;
+       }
+        
+       .active{
+        background-color: green;
+       }
+       .dropbtn{
+         font-size: 16px;
+         border: none;
+         background-color:inherit;
+         outline: none;
+         font: inherit;
+         margin: 0;
+         padding: inherit;
+         
+
+       }
+       .dropbtn a{
+        text-decoration: none;
+        color: white;
+       }
+       .dpdwn a{
+        display: none;
+        background-color:rgb(77, 77, 88);
+        min-width: 100px;
+        padding: 16px 0px 16px 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        text-decoration: none;
+
+        
+       }
+       .dropbtn:hover{
+        background-color: grey;
+    
+       }
+      
+       .dropdown:hover .dpdwn a{
+        display: block;
+       }
+       .column{
+        text-decoration: none;
+        color: azure;
+
+       }
+      
+       
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a  class ="active" href="">HOME</a></li>
+        
+        <li><a href="">CONTACTS</a></li>
+        <li><a href="">ABOUT</a></li>
+    
+        <li class="dropdown">
+           <button class="dropbtn"><a href="">NEWS</a>
+            <i class="fa-thin fa-caret-down" ></i>
+        </button>
+            <div class="dpdwn">
+                <a class = "column" href="#">World</a>
+                <a class = "column" href="#">Sports</a>
+                <a class = "column" href="#">Business</a>
+                <a class = "column" href="#">Science/Tech</a>
+            </div>
+            </div>
+    </ul>
+    
+</body>
+</html>
