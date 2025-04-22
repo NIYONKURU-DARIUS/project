@@ -1,0 +1,161 @@
+footer {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  padding: 60px 40px 40px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1;
+  min-width: 240px;
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
+
+.logo {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h3:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #4285f4;
+}
+
+h4 {
+  margin-top: 8px;
+  color: #4285f4;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-count: 2;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4285f4;
+}
+
+.email-id {
+  color: #4285f4;
+}
+
+form {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 12px 15px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2a75f3;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #4285f4;
+  transform: translateY(-3px);
+}
+
+.bottom-bar {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex: 100%;
+    padding-right: 0;
+  }
+  
+  ul {
+    column-count: 1;
+  }
+}
